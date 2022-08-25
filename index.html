@@ -28,6 +28,7 @@
     />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
   </head>
   <body id="page-top">
     <!-- Navigation-->
@@ -38,11 +39,11 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Kamal Singh</span>
         <span class="d-none d-lg-block">
-          <img
-            class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="assets/img/profile.jpg"
-            alt="..."
-          />
+          <div class="profile">
+            <div class="profile__back">
+              <img src="./assets/img/profile.jpg" alt="profile" />
+            </div>
+          </div>
         </span>
       </a>
       <button
@@ -100,10 +101,10 @@
               >kamalsinghshah45518@gmail.com</a
             >
           </div>
-          <p class="lead mb-5">I'm a student who is willing learn nothing.</p>
+          <p class="mb-5">I'm a student who is willing to learn nothing.</p>
           <div class="btn_wrap">
             <span id="share-span">Social</span>
-            <div class="social-icons container">
+            <div class="social-icons">
               <a
                 class="social-icon"
                 href="https://www.linkedin.com/in/kamal-s/"
@@ -123,7 +124,7 @@
       <hr class="m-0" />
 
       <!-- Experience-->
-      <section class="resume-section">
+      <section class="resume-section" id="experience">
         <div class="resume-section-content">
           <h2 class="mb-5">Experience</h2>
           <div class="d-flex flex-row flex-md-row justify-content-between mb-5">

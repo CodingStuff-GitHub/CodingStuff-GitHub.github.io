@@ -429,9 +429,11 @@ button:not(:disabled) {
 .navbar-dark .navbar-brand:hover {
   color: #fff;
 }
+
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
 }
+
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
   color: rgba(255, 255, 255, 0.75);
@@ -823,11 +825,13 @@ li {
   );
   position: absolute;
 }
+/* Main Profile Image */
 img {
   width: 100%;
   display: block;
   filter: brightness(85%);
 }
+/* Profile Image Tape */
 img:before {
   content: "";
   z-index: -1;
@@ -853,4 +857,28 @@ img::after {
   left: 0;
   background: inherit;
   border-radius: inherit;
+}
+
+/* When Scrolling properties of the side nav active element changes */
+.navbar-dark .navbar-nav .nav-link.active {
+  color: white;
+  font-size: 22px;
+}
+
+/* Button Personal Website */
+.thick-lines {
+  align-self: center;
+  padding: 0.5rem;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 7px #41403e;
+  background-color: #f8f9fad3;
+  color: #171717;
+}
+.thick-lines:hover {
+  background-color: #f8f9fa;
+  color: #41403e;
 }

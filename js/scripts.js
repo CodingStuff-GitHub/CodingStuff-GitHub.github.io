@@ -1,4 +1,16 @@
 window.addEventListener("DOMContentLoaded", (event) => {
+  // (B1) AJAX LOAD JSON DATA
+  fetch("/assets/data/data.json")
+    .then((res) => res.json())
+    .then((data) => {
+      Object.keys(data).forEach(function (key) {
+        try {
+          document.getElementById(key).innerHTML = data[key];
+        } catch (error) {
+          console.log("No id found with this key : " + key);
+        }
+      });
+    });
   // Activate Bootstrap scrollspy on the main nav element
   try {
     new bootstrap.ScrollSpy(document.body, {

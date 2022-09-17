@@ -11,13 +11,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
         }
       });
     });
-
-  fetch("/templates/experience/experience.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("experience").innerHTML = data;
-    });
-
   // Activate Bootstrap scrollspy on the main nav element
   try {
     new bootstrap.ScrollSpy(document.body, {

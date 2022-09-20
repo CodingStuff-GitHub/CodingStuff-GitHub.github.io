@@ -212,6 +212,10 @@ button:not(:disabled) {
 .list-inline-item {
   display: inline-block;
 }
+.list-inline-item:hover {
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
+}
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
 }
@@ -487,6 +491,9 @@ button:not(:disabled) {
 }
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+.mr-3 {
+  margin-right: 2rem !important;
 }
 .p-0 {
   padding: 0 !important;

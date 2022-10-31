@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-  // (B1) AJAX LOAD JSON DATA
+  // AJAX LOAD JSON DATA
   fetchAbout();
   // Activate Bootstrap scrollspy on the main nav element
   try {
@@ -25,6 +25,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+// Fetches the data from about and put it in the page.
 function fetchAbout() {
   fetch("/assets/data/about.json")
     .then((res) => res.json())

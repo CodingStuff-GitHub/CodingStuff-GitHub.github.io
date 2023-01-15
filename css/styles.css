@@ -842,3 +842,6 @@ img::after {
   background-color: #f8f9fa;
   color: #41403e;
 }
+#user-name {
+  font-style: italic;
+}

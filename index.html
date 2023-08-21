@@ -15,500 +15,509 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-      id="sideNav"
-    >
-      <!-- Main Heading in Navigation -->
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span id="full-name" class="d-block d-lg-none"></span>
-        <span class="d-none d-lg-block">
-          <div class="profile">
-            <div class="profile__back">
-              <img src="./assets/img/profile.webp" alt="profile" />
-            </div>
-          </div>
-        </span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader"></div>
+    </div>
+    <!-- Main Content -->
+    <div id="page-top">
+      <!-- Navigation -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+        id="sideNav"
       >
-        <iconify-icon icon="mdi:menu"></iconify-icon>
-      </button>
-      <!-- Main Navigation Links -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about"> About </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">
-              Experience
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">
-              Education
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#trainings">
-              Trainings
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Personal Website Button -->
-      <div>
-        <button class="thick-lines">
-          <a
-            target="_blank"
-            href="https://codingstuff-github.github.io/snippet-blog"
-            >Snippets</a
-          >
+        <!-- Main Heading in Navigation -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span id="full-name" class="d-block d-lg-none"></span>
+          <span class="d-none d-lg-block">
+            <div class="profile">
+              <div class="profile__back">
+                <img src="./assets/img/profile.webp" alt="profile" />
+              </div>
+            </div>
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <iconify-icon icon="mdi:menu"></iconify-icon>
         </button>
-      </div>
-    </nav>
-    <!-- Page Content-->
-    <div class="container-fluid p-0">
-      <!-- About-->
-      <section class="resume-section" id="about">
-        <div class="resume-section-content">
-          <h1>
-            <span id="first-name" class="mb-0"></span>
-            <span id="last-name" class="text-primary"></span>
-          </h1>
-          <div class="subheading mb-5">
-            <span id="user-name"></span> · <span id="place"></span> ·
-            <a href="mailto:kamalsinghshah45518@gmail.com"></a>
-          </div>
-          <p id="bio" class="mb-5"></p>
-          <!--Social Buttons-->
-          <div class="social-icons">
-            <a
-              class="social-icon"
-              href="https://github.com/CodingStuff-GitHub"
-              title="Github"
-            >
-              <iconify-icon icon="fa-brands:github" style="color: white">
-              </iconify-icon>
-            </a>
-            <a
-              class="social-icon"
-              href="https://www.linkedin.com/in/kamal-s/"
-              title="Linkedin"
-            >
-              <iconify-icon icon="fa-brands:linkedin" style="color: white">
-              </iconify-icon> </a
-            ><a
-              class="social-icon"
-              href="https://www.hackerrank.com/coding_stuff"
-              title="HackerRank"
-            >
-              <iconify-icon icon="fa-brands:hackerrank" style="color: white">
-              </iconify-icon>
-            </a>
-            <a
-              class="social-icon"
-              href="https://leetcode.com/Coding_Stuff/"
-              title="Leetcode"
-            >
-              <iconify-icon icon="simple-icons:leetcode" style="color: white">
-              </iconify-icon>
-            </a>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Experience-->
-      <section class="resume-section" id="experience">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Experience</h2>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">QA Automation Engineer</h3>
-              <div class="subheading">Capgemini</div>
-              <p class="mr-3">Experienced in Agile Methodologies</p>
-              <p class="mr-3">Learnt HTML, CSS and JavaScript</p>
-              <p class="mr-3">Working knowledge on Selenium and Jenkins</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">January 2022 - April 2022</span>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Data Science Intern</h3>
-              <div class="subheading">The Sparks Foundation</div>
-              <div class="text-primary mb-3"></div>
-              <p>
-                Write codes to collect and analyze data from external sources
-              </p>
-              <p>
-                Build machine learning models using Python Juptyer Notebooks
-              </p>
-              <p>
-                Build a strong professional profile, present given tasks and
-                submissions
-              </p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">June 2021 - July 2021</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Education-->
-      <section class="resume-section" id="education">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Education</h2>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Terna Engineering College Nerul</h3>
-              <div class="subheading mb-3">Bachelor of Engineering</div>
-              <div>Computer Engineering</div>
-              <p>GPA: 8.53</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">August 2019 - May 2022</span>
-            </div>
-          </div>
-          <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-              <h3 class="mb-0">Kendriya Vidyalaya No 2 Mumbai</h3>
-              <div class="subheading mb-3">Senior Secondary Education</div>
-              <p>Percentage: 78.80 %</p>
-            </div>
-            <div class="flex-shrink-0">
-              <span class="text-primary">Year of completion: 2017</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Projects-->
-      <section class="resume-section" id="projects">
-        <div class="resume-section-content">
-          <h2 class="mb-3">Projects</h2>
-          <ul class="fa-ul mb-0">
-            <!-- Personal Portfolio -->
-            <li>
-              <a target="_blank" href="https://codingstuff-github.github.io/">
-                <span class="fa-li">
-                  <iconify-icon icon="material-symbols:link-rounded">
-                  </iconify-icon>
-                </span>
-                <u>Personal Portfolio</u>
+        <!-- Main Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about"> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">
+                Experience
               </a>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:language-html5"></iconify-icon>
-              </span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#education">
+                Education
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#trainings">
+                Trainings
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Personal Website Button -->
+        <div>
+          <button class="thick-lines">
+            <a
+              target="_blank"
+              href="https://codingstuff-github.github.io/snippet-blog"
+              >Snippets</a
+            >
+          </button>
+        </div>
+      </nav>
+      <!-- Page Content-->
+      <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+          <div class="resume-section-content">
+            <h1>
+              <span id="first-name" class="mb-0"></span>
+              <span id="last-name" class="text-primary"></span>
+            </h1>
+            <div class="subheading mb-5">
+              <span id="user-name"></span> · <span id="place"></span> ·
+              <a href="mailto:kamalsinghshah45518@gmail.com"></a>
+            </div>
+            <p id="bio" class="mb-5"></p>
+            <!--Social Buttons-->
+            <div class="social-icons">
+              <a
+                class="social-icon"
+                href="https://github.com/CodingStuff-GitHub"
+                title="Github"
+              >
+                <iconify-icon icon="fa-brands:github" style="color: white">
+                </iconify-icon>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.linkedin.com/in/kamal-s/"
+                title="Linkedin"
+              >
+                <iconify-icon icon="fa-brands:linkedin" style="color: white">
+                </iconify-icon> </a
+              ><a
+                class="social-icon"
+                href="https://www.hackerrank.com/coding_stuff"
+                title="HackerRank"
+              >
+                <iconify-icon icon="fa-brands:hackerrank" style="color: white">
+                </iconify-icon>
+              </a>
+              <a
+                class="social-icon"
+                href="https://leetcode.com/Coding_Stuff/"
+                title="Leetcode"
+              >
+                <iconify-icon icon="simple-icons:leetcode" style="color: white">
+                </iconify-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+          <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between mb-5"
+            >
+              <div class="flex-grow-1">
+                <h3 class="mb-0">QA Automation Engineer</h3>
+                <div class="subheading">Capgemini</div>
+                <p class="mr-3">Experienced in Agile Methodologies</p>
+                <p class="mr-3">Learnt HTML, CSS and JavaScript</p>
+                <p class="mr-3">Working knowledge on Selenium and Jenkins</p>
+              </div>
+              <div class="flex-shrink-0">
+                <span class="text-primary">January 2022 - April 2022</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+              <div class="flex-grow-1">
+                <h3 class="mb-0">Data Science Intern</h3>
+                <div class="subheading">The Sparks Foundation</div>
+                <div class="text-primary mb-3"></div>
+                <p>
+                  Write codes to collect and analyze data from external sources
+                </p>
+                <p>
+                  Build machine learning models using Python Juptyer Notebooks
+                </p>
+                <p>
+                  Build a strong professional profile, present given tasks and
+                  submissions
+                </p>
+              </div>
+              <div class="flex-shrink-0">
+                <span class="text-primary">June 2021 - July 2021</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+          <div class="resume-section-content">
+            <h2 class="mb-5">Education</h2>
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between mb-5"
+            >
+              <div class="flex-grow-1">
+                <h3 class="mb-0">Terna Engineering College Nerul</h3>
+                <div class="subheading mb-3">Bachelor of Engineering</div>
+                <div>Computer Engineering</div>
+                <p>GPA: 8.53</p>
+              </div>
+              <div class="flex-shrink-0">
+                <span class="text-primary">August 2019 - May 2022</span>
+              </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+              <div class="flex-grow-1">
+                <h3 class="mb-0">Kendriya Vidyalaya No 2 Mumbai</h3>
+                <div class="subheading mb-3">Senior Secondary Education</div>
+                <p>Percentage: 78.80 %</p>
+              </div>
+              <div class="flex-shrink-0">
+                <span class="text-primary">Year of completion: 2017</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Projects-->
+        <section class="resume-section" id="projects">
+          <div class="resume-section-content">
+            <h2 class="mb-3">Projects</h2>
+            <ul class="fa-ul mb-0">
+              <!-- Personal Portfolio -->
+              <li>
+                <a target="_blank" href="https://codingstuff-github.github.io/">
+                  <span class="fa-li">
+                    <iconify-icon icon="material-symbols:link-rounded">
+                    </iconify-icon>
+                  </span>
+                  <u>Personal Portfolio</u>
+                </a>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:language-html5"></iconify-icon>
+                </span>
 
-              <span class="fa-li">
-                <iconify-icon icon="mdi:language-css3"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:language-javascript"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:github"></iconify-icon>
-              </span>
-              <p>
-                Built my own portfolio using HTML, CSS, JavaScript and deployed
-                using Github Pages
-              </p>
-            </li>
-            <!-- Snippet Personal Blog -->
-            <li>
-              <a
-                target="_blank"
-                href="https://codingstuff-github.github.io/snippet-blog/"
-              >
                 <span class="fa-li">
-                  <iconify-icon icon="material-symbols:link-rounded">
-                  </iconify-icon>
+                  <iconify-icon icon="mdi:language-css3"></iconify-icon>
                 </span>
-                <u>Snippet Personal Blog</u>
-              </a>
-              <span class="fa-li">
-                <iconify-icon icon="tabler:brand-nextjs"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:github"></iconify-icon>
-              </span>
-              <p>
-                Developed my own personal blog for learning by using NextJS and
-                deployed in Github Pages
-              </p>
-            </li>
-            <!-- Women Safety App -->
-            <li>
-              <a
-                target="_blank"
-                href="https://github.com/Minideepali/Women-Safety-App"
-              >
                 <span class="fa-li">
-                  <iconify-icon icon="material-symbols:link-rounded">
-                  </iconify-icon>
+                  <iconify-icon icon="mdi:language-javascript"></iconify-icon>
                 </span>
-                <u>Women Safety App </u>
-              </a>
-              <span class="fa-li">
-                <iconify-icon icon="material-symbols:android"> </iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="tabler:api"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="simple-icons:nodedotjs"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="simple-icons:mongodb"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="bxl:heroku"></iconify-icon>
-              </span>
-              <p>
-                Developed Android app comprises of safety measures for women
-                which consist of 5 API endpoints in Express framework in
-                Node.js. It was deployed in Heroku and Data stored in MongoDB
-                Atlas Database.
-              </p>
-            </li>
-            <!-- Wechat -->
-            <li>
-              <a
-                target="_blank"
-                href="https://wechat-web-service.onrender.com/"
-              >
                 <span class="fa-li">
-                  <iconify-icon icon="material-symbols:link-rounded">
-                  </iconify-icon>
+                  <iconify-icon icon="mdi:github"></iconify-icon>
                 </span>
-                <u>WeChat</u>
-              </a>
-              <span class="fa-li">
-                <iconify-icon icon="akar-icons:node-fill"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="simple-icons:socketdotio"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="simple-icons:mongodb"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:react"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:material-ui"></iconify-icon>
-              </span>
-              <p>
-                Developed an anonymous chat application using Socket.IO and
-                utilized NodeJS, Express and MongoDB for Backend with Frontend
-                using React and MaterialUI
-              </p>
-            </li>
-            <!-- Case Converter -->
-            <li>
-              <a
-                target="_blank"
-                href="https://codingstuff-github.github.io/case-converter/"
-              >
+                <p>
+                  Built my own portfolio using HTML, CSS, JavaScript and
+                  deployed using Github Pages
+                </p>
+              </li>
+              <!-- Snippet Personal Blog -->
+              <li>
+                <a
+                  target="_blank"
+                  href="https://codingstuff-github.github.io/snippet-blog/"
+                >
+                  <span class="fa-li">
+                    <iconify-icon icon="material-symbols:link-rounded">
+                    </iconify-icon>
+                  </span>
+                  <u>Snippet Personal Blog</u>
+                </a>
                 <span class="fa-li">
-                  <iconify-icon icon="material-symbols:link-rounded">
-                  </iconify-icon>
+                  <iconify-icon icon="tabler:brand-nextjs"></iconify-icon>
                 </span>
-                <u>Case Converter</u>
-              </a>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:language-html5"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:language-css3"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:language-javascript"></iconify-icon>
-              </span>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:github"></iconify-icon>
-              </span>
-              <p>
-                Developed to convert to any case using HTML, CSS, JavaScript and
-                deployed in Github Pages
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Skills-->
-      <section class="resume-section" id="skills">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Skills</h2>
-          <div class="subheading mb-3">Programming Languages & Tools</div>
-          <div class="list-inline dev-icons">
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="HTML"
-              icon="logos:html-5"
-            ></iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="CSS"
-              icon="logos:css-3"
-            ></iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="Javascript"
-              icon="logos:javascript"
-            ></iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="Angular"
-              icon="logos:angular-icon"
-            ></iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="C++"
-              icon="logos:c-plusplus"
-            >
-            </iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="C"
-              icon="logos:c"
-            >
-            </iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="MongoDB"
-              icon="logos:mongodb-icon"
-            >
-            </iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="React"
-              icon="logos:react"
-            >
-            </iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="NodeJS"
-              icon="logos:nodejs"
-            >
-            </iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="Github"
-              icon="logos:github-octocat"
-            >
-            </iconify-icon>
-            <iconify-icon
-              class="list-inline-item black-and-white-img"
-              title="Python"
-              icon="logos:python"
-            >
-            </iconify-icon>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:github"></iconify-icon>
+                </span>
+                <p>
+                  Developed my own personal blog for learning by using NextJS
+                  and deployed in Github Pages
+                </p>
+              </li>
+              <!-- Women Safety App -->
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/Minideepali/Women-Safety-App"
+                >
+                  <span class="fa-li">
+                    <iconify-icon icon="material-symbols:link-rounded">
+                    </iconify-icon>
+                  </span>
+                  <u>Women Safety App </u>
+                </a>
+                <span class="fa-li">
+                  <iconify-icon icon="material-symbols:android"> </iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="tabler:api"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="simple-icons:nodedotjs"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="simple-icons:mongodb"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="bxl:heroku"></iconify-icon>
+                </span>
+                <p>
+                  Developed Android app comprises of safety measures for women
+                  which consist of 5 API endpoints in Express framework in
+                  Node.js. It was deployed in Heroku and Data stored in MongoDB
+                  Atlas Database.
+                </p>
+              </li>
+              <!-- Wechat -->
+              <li>
+                <a
+                  target="_blank"
+                  href="https://wechat-web-service.onrender.com/"
+                >
+                  <span class="fa-li">
+                    <iconify-icon icon="material-symbols:link-rounded">
+                    </iconify-icon>
+                  </span>
+                  <u>WeChat</u>
+                </a>
+                <span class="fa-li">
+                  <iconify-icon icon="akar-icons:node-fill"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="simple-icons:socketdotio"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="simple-icons:mongodb"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:react"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:material-ui"></iconify-icon>
+                </span>
+                <p>
+                  Developed an anonymous chat application using Socket.IO and
+                  utilized NodeJS, Express and MongoDB for Backend with Frontend
+                  using React and MaterialUI
+                </p>
+              </li>
+              <!-- Case Converter -->
+              <li>
+                <a
+                  target="_blank"
+                  href="https://codingstuff-github.github.io/case-converter/"
+                >
+                  <span class="fa-li">
+                    <iconify-icon icon="material-symbols:link-rounded">
+                    </iconify-icon>
+                  </span>
+                  <u>Case Converter</u>
+                </a>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:language-html5"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:language-css3"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:language-javascript"></iconify-icon>
+                </span>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:github"></iconify-icon>
+                </span>
+                <p>
+                  Developed to convert to any case using HTML, CSS, JavaScript
+                  and deployed in Github Pages
+                </p>
+              </li>
+            </ul>
           </div>
-          <div class="subheading mb-3">Domains</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:tick"></iconify-icon>
-              </span>
-              MERN Stack
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:tick"></iconify-icon>
-              </span>
-              Machine Learning
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:tick"></iconify-icon>
-              </span>
-              Android Development
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:tick"></iconify-icon>
-              </span>
-              Cloud Computing
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:tick"></iconify-icon>
-              </span>
-              Data Analytics
-            </li>
-          </ul>
-        </div>
-      </section>
-      <hr class="m-0" />
-      <!-- Trainings-->
-      <section class="resume-section" id="trainings">
-        <div class="resume-section-content">
-          <h2 class="mb-5">Trainings</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:medal"></iconify-icon>
-              </span>
-              Udacity - AWS Machine Learning Scholarship Challenge
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:medal"></iconify-icon>
-              </span>
-              Udacity - SUSE Cloud Native Scholarship Challenge
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:medal"></iconify-icon>
-              </span>
-              Stanford - Machine Learning
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:medal"></iconify-icon>
-              </span>
-              Google - Fundamentals Of Digital Marketing
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:medal"></iconify-icon>
-              </span>
-              Coursera - Cloud Computing Basics (Cloud 101)
-            </li>
-            <li>
-              <span class="fa-li">
-                <iconify-icon icon="mdi:medal"></iconify-icon>
-              </span>
-              Udacity - Google India Scholarship Challenge
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+          <div class="resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages & Tools</div>
+            <div class="list-inline dev-icons">
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="HTML"
+                icon="logos:html-5"
+              ></iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="CSS"
+                icon="logos:css-3"
+              ></iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="Javascript"
+                icon="logos:javascript"
+              ></iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="Angular"
+                icon="logos:angular-icon"
+              ></iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="C++"
+                icon="logos:c-plusplus"
+              >
+              </iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="C"
+                icon="logos:c"
+              >
+              </iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="MongoDB"
+                icon="logos:mongodb-icon"
+              >
+              </iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="React"
+                icon="logos:react"
+              >
+              </iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="NodeJS"
+                icon="logos:nodejs"
+              >
+              </iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="Github"
+                icon="logos:github-octocat"
+              >
+              </iconify-icon>
+              <iconify-icon
+                class="list-inline-item black-and-white-img"
+                title="Python"
+                icon="logos:python"
+              >
+              </iconify-icon>
+            </div>
+            <div class="subheading mb-3">Domains</div>
+            <ul class="fa-ul mb-0">
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </span>
+                MERN Stack
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </span>
+                Machine Learning
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </span>
+                Android Development
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </span>
+                Cloud Computing
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:tick"></iconify-icon>
+                </span>
+                Data Analytics
+              </li>
+            </ul>
+          </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Trainings-->
+        <section class="resume-section" id="trainings">
+          <div class="resume-section-content">
+            <h2 class="mb-5">Trainings</h2>
+            <ul class="fa-ul mb-0">
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:medal"></iconify-icon>
+                </span>
+                Udacity - AWS Machine Learning Scholarship Challenge
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:medal"></iconify-icon>
+                </span>
+                Udacity - SUSE Cloud Native Scholarship Challenge
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:medal"></iconify-icon>
+                </span>
+                Stanford - Machine Learning
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:medal"></iconify-icon>
+                </span>
+                Google - Fundamentals Of Digital Marketing
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:medal"></iconify-icon>
+                </span>
+                Coursera - Cloud Computing Basics (Cloud 101)
+              </li>
+              <li>
+                <span class="fa-li">
+                  <iconify-icon icon="mdi:medal"></iconify-icon>
+                </span>
+                Udacity - Google India Scholarship Challenge
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>

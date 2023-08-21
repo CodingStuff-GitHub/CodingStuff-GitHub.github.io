@@ -1,6 +1,4 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-  // AJAX LOAD JSON DATA
-  fetchAbout();
   // Activate Bootstrap scrollspy on the main nav element
   try {
     new bootstrap.ScrollSpy(document.body, {
@@ -24,21 +22,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
-
-// Fetches the data from about and put it in the page.
-function fetchAbout() {
-  fetch("/assets/data/about.json")
-    .then((res) => res.json())
-    .then((data) => {
-      Object.keys(data).forEach(function (key) {
-        try {
-          document.getElementById(key).innerHTML = data[key];
-        } catch (error) {
-          console.log("No id found with this key : " + key);
-        }
-      });
-    });
-}
 
 // Wait for screen to load and then shide loading and show main content
 window.addEventListener("load", function () {

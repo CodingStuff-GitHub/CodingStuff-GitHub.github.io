@@ -41,7 +41,12 @@ function fetchAbout() {
 }
 
 // Wait for screen to load and then shide loading and show main content
+console.log("Before waiting for load event");
+
 window.addEventListener("load", function () {
+  console.log("Load event triggered");
   document.getElementById("loading-screen").style.display = "none";
   document.getElementById("content").style.display = "block";
 });
+
+console.log("After adding load event listener");

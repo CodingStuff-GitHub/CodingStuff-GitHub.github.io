@@ -39,3 +39,9 @@ function fetchAbout() {
       });
     });
 }
+
+// Wait for screen to load and then shide loading and show main content
+window.addEventListener("load", function () {
+  document.getElementById("loading-screen").style.display = "none";
+  document.getElementById("content").style.display = "block";
+});

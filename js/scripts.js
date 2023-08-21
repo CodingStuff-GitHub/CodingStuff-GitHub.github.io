@@ -40,21 +40,8 @@ function fetchAbout() {
     });
 }
 
-// Simulate a minimum loading time of 2 seconds
+// Wait for screen to load and then shide loading and show main content
 window.addEventListener("load", function () {
-  // Calculate the time remaining until the minimum loading time is reached
-  const currentTime = new Date().getTime();
-  const twoSecondsLater = currentTime + 2000;
-
-  // Hide the loading screen after the minimum loading time
-  const hideLoadingScreen = function () {
-    document.getElementById("loading-screen").style.display = "none";
-    document.getElementById("content").style.display = "block";
-  };
-
-  if (currentTime < twoSecondsLater) {
-    setTimeout(hideLoadingScreen, twoSecondsLater - currentTime);
-  } else {
-    hideLoadingScreen();
-  }
+  document.getElementById("loading-screen").style.display = "none";
+  document.getElementById("content").style.display = "block";
 });

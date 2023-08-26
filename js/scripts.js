@@ -8,7 +8,16 @@ window.addEventListener("DOMContentLoaded", (event) => {
   } catch (e) {
     console.log(e);
   }
+  const navLinks = document.querySelectorAll(".nav-link");
 
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+      navLinks.forEach(function (navLink) {
+        navLink.classList.remove("active");
+      });
+      this.classList.add("active");
+    });
+  });
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector(".navbar-toggler");
   const responsiveNavItems = Array.from(

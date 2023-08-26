@@ -622,22 +622,7 @@ li {
   background: inherit;
   border-radius: inherit;
 }
-.profile .profile__back:before {
-  -webkit-transform: rotate(-28deg);
-  transform: rotate(-28deg);
-  width: 34%;
-  height: 10%;
-  top: -5%;
-  left: -12%;
-}
-.profile .profile__back:after {
-  -webkit-transform: rotate(-40deg);
-  transform: rotate(-40deg);
-  width: 46%;
-  height: 10%;
-  bottom: 0;
-  right: -13%;
-}
+
 .profile__back {
   background-repeat: no-repeat;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
@@ -670,6 +655,22 @@ li {
     hsla(51, 13%, 70%, 0.4)
   );
   position: absolute;
+}
+.profile .profile__back:before {
+  -webkit-transform: rotate(-28deg);
+  transform: rotate(-28deg);
+  width: 34%;
+  height: 10%;
+  top: -5%;
+  left: -12%;
+}
+.profile .profile__back:after {
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  width: 46%;
+  height: 10%;
+  bottom: 0;
+  right: -13%;
 }
 img:before {
   content: "";

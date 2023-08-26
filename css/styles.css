@@ -1,13 +1,4 @@
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #bd5d38;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -747,4 +738,11 @@ img::after {
 }
 #content {
   display: none;
+}
+/* CSS */
+.navbar-nav .nav-item .nav-link.active {
+  /* Add styling for the active link here */
+  color: white; /* For example, change the text color */
+  font-weight: bold; /* Make it bold */
+  font-size: larger;
 }

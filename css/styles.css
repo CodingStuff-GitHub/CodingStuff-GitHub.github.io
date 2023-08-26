@@ -76,11 +76,12 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  padding-top: 3.375rem;
+  color: #6c757d;
 }
 hr {
   margin: 1rem 0;
@@ -103,9 +104,11 @@ h3 {
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
+  text-transform: uppercase;
 }
 h1 {
   font-size: calc(1.725rem + 5.7vw);
+  line-height: 1;
 }
 @media (min-width: 1200px) {
   h1 {
@@ -131,12 +134,12 @@ h3 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: AgentC, sans-serif;
+  font-size: 26px;
 }
 ul {
   list-style-type: none;
   padding-left: 2rem;
-}
-ul {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -148,26 +151,20 @@ a:hover {
   color: #974a2d;
 }
 img {
-  vertical-align: middle;
+  width: 100%;
+  display: block;
+  filter: brightness(85%);
 }
 button {
   border-radius: 0;
-}
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-button {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-button {
   text-transform: none;
 }
-[type="button"],
-button {
-  -webkit-appearance: button;
+button:focus:not(:focus-visible) {
+  outline: 0;
 }
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -199,13 +196,10 @@ button:not(:disabled) {
 }
 ::-webkit-file-upload-button {
   font: inherit;
+  -webkit-appearance: button;
 }
 ::file-selector-button {
   font: inherit;
-}
-::-webkit-file-upload-button {
-  font: inherit;
-  -webkit-appearance: button;
 }
 .list-inline-item {
   margin: 0.1em;
@@ -229,6 +223,8 @@ button:not(:disabled) {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+  background-image: url(https://codingstuff-github.github.io/assets/img/paper_white4.webp);
+  background-size: 100%;
 }
 @media (min-width: 576px) {
   .container {
@@ -521,35 +517,23 @@ button:not(:disabled) {
     display: none !important;
   }
 }
-body {
-  padding-top: 3.375rem;
-  color: #6c757d;
-}
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: 17rem;
   }
 }
-h1,
-h2,
-h3 {
-  text-transform: uppercase;
-}
-h1 {
-  line-height: 1;
-}
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
-  font-weight: 500;
   font-size: 1.5rem;
+  font-family: WhatNot, sans-serif;
+  font-weight: 700;
 }
 #sideNav {
   padding-left: 1rem;
   padding-right: 1rem;
+  border-radius: 0.1em;
+  background-image: url(https://codingstuff-github.github.io/assets/img/paper_brown1.webp);
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
@@ -659,15 +643,7 @@ h1,
 h2,
 h3,
 span {
-  font-family: Whatnot;
-}
-p {
-  font-family: AgentC;
-  font-size: 26px;
-}
-.subheading {
-  font-family: WhatNot;
-  font-weight: 700;
+  font-family: Whatnot, sans-serif;
 }
 li {
   font-size: 20px;
@@ -702,15 +678,6 @@ li {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
-}
-.container,
-.container-fluid {
-  background-image: url(https://codingstuff-github.github.io/assets/img/paper_white4.webp);
-  background-size: 100%;
-}
-#sideNav {
-  border-radius: 0.1em;
-  background-image: url(https://codingstuff-github.github.io/assets/img/paper_brown1.webp);
 }
 #sideNav:before {
   content: "";
@@ -786,12 +753,6 @@ li {
     hsla(51, 13%, 70%, 0.4)
   );
   position: absolute;
-}
-/* Main Profile Image */
-img {
-  width: 100%;
-  display: block;
-  filter: brightness(85%);
 }
 /* Profile Image Tape */
 img:before {

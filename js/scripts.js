@@ -21,6 +21,7 @@ function scrollNavigator() {
 
   const setActiveNav = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
+    let defaultActive = "about"; // Set default active section to "About"
 
     sections.forEach((section) => {
       const navLink = document.querySelector(
@@ -32,10 +33,19 @@ function scrollNavigator() {
         section.offsetTop + section.offsetHeight > scrollPosition
       ) {
         navLink.classList.add("active");
+        defaultActive = section.id; // Update default active section
       } else {
         navLink.classList.remove("active");
       }
     });
+
+    // Add "active" class to the default active section link
+    const defaultNavLink = document.querySelector(
+      `.nav-link[href="#${defaultActive}"]`
+    );
+    if (defaultNavLink) {
+      defaultNavLink.classList.add("active");
+    }
   };
 
   document.querySelectorAll(".nav-link").forEach((link) => {

@@ -37,12 +37,13 @@ function scrollNavigator() {
       }
     });
   };
+
   document.querySelectorAll(".nav-link").forEach((link) => {
     link.addEventListener("click", handleNavClick);
   });
 
   window.addEventListener("scroll", setActiveNav);
-  setActiveNav(); // Set initial active section on page load
+  setActiveNav(); // Set active section based on scroll position
 }
 
 // Collapse responsive navbar when toggler is visible

@@ -1,24 +1,52 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-  // Activate Bootstrap scrollspy on the main nav element
-  try {
-    new bootstrap.ScrollSpy(document.body, {
-      target: "#sideNav",
-      offset: 74,
-    });
-  } catch (e) {
-    console.log(e);
-  }
-  const navLinks = document.querySelectorAll(".nav-link");
+  loadingScreen();
+  navigationToggler();
+  scrollNavigator();
+});
 
-  navLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      navLinks.forEach(function (navLink) {
-        navLink.classList.remove("active");
-      });
-      this.classList.add("active");
+// Activate Bootstrap scrollspy on the main nav element
+function scrollNavigator() {
+  const sections = document.querySelectorAll("section"); // Get all sections
+
+  const handleNavClick = (event) => {
+    event.preventDefault();
+    const target = document.querySelector(event.target.getAttribute("href")); // Get the target section
+    const offset = target.offsetTop;
+
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth",
     });
+  };
+
+  const setActiveNav = () => {
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach((section) => {
+      const navLink = document.querySelector(
+        `.nav-link[href="#${section.id}"]`
+      );
+
+      if (
+        section.offsetTop <= scrollPosition &&
+        section.offsetTop + section.offsetHeight > scrollPosition
+      ) {
+        navLink.classList.add("active");
+      } else {
+        navLink.classList.remove("active");
+      }
+    });
+  };
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", handleNavClick);
   });
-  // Collapse responsive navbar when toggler is visible
+
+  window.addEventListener("scroll", setActiveNav);
+  setActiveNav(); // Set initial active section on page load
+}
+
+// Collapse responsive navbar when toggler is visible
+function navigationToggler() {
   const navbarToggler = document.body.querySelector(".navbar-toggler");
   const responsiveNavItems = Array.from(
     document.querySelectorAll("#navbarResponsive .nav-link")
@@ -31,13 +59,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
+}
 
-  // Wait for screen to load and then hide loading and show main content
+// Wait for screen to load and then hide loading and show main content
+function loadingScreen() {
   window.addEventListener("load", function () {
-    // Hide the loading screen
     document.getElementById("loading-screen").style.display = "none";
-    // Show the main content
     document.getElementById("content").style.display = "block";
   });
-  document.getElementById("content").style.display = "block";
-});
+}

@@ -471,6 +471,7 @@ button:focus:not(:focus-visible) {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
@@ -751,7 +752,7 @@ img::after {
 /* CSS */
 .navbar-nav .nav-item .nav-link.active {
   /* Add styling for the active link here */
-  color: white; /* For example, change the text color */
-  font-weight: bold; /* Make it bold */
+  color: white;
+  font-weight: bold;
   font-size: larger;
 }

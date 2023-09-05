@@ -60,7 +60,10 @@ function scrollNavigator() {
   setActiveNav();
 }
 
-// Collapse responsive navbar when toggler is visible
+/**
+ * This function handles the toggling of a responsive navigation bar.
+ * It collapses the navbar when the toggler is visible and toggles the menu icon when the toggle button is clicked.
+ */
 function navigationToggler() {
   const navbarToggler = document.body.querySelector(".navbar-toggler");
   const responsiveNavItems = Array.from(
@@ -69,21 +72,21 @@ function navigationToggler() {
 
   responsiveNavItems.forEach(function (responsiveNavItem) {
     responsiveNavItem.addEventListener("click", () => {
-      if (getComputedStyle(navbarToggler).display !== "none") {
+      if (window.getComputedStyle(navbarToggler).display !== "none") {
         navbarToggler.click();
       }
     });
   });
 
-  // Check the current icon and toggle it
   const toggleButton = document.getElementById("toggleButton");
   const menuIcon = document.getElementById("menuIcon");
+
   toggleButton.addEventListener("click", function () {
-    if (menuIcon.getAttribute("icon") === "mdi:menu") {
-      menuIcon.setAttribute("icon", "mdi:close");
-    } else {
-      menuIcon.setAttribute("icon", "mdi:menu");
-    }
+    const currentIcon = menuIcon.getAttribute("icon");
+    menuIcon.setAttribute(
+      "icon",
+      currentIcon === "mdi:menu" ? "mdi:close" : "mdi:menu"
+    );
   });
 }
 

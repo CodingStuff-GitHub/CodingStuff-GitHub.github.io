@@ -1,9 +1,3 @@
-window.addEventListener("DOMContentLoaded", (event) => {
-  loadingScreen();
-  navigationToggler();
-  scrollNavigator();
-});
-
 // Activate Bootstrap scrollspy on the main nav element
 function scrollNavigator() {
   const sections = document.querySelectorAll("section"); // Get all sections
@@ -71,23 +65,32 @@ function navigationToggler() {
     });
   });
 
+  // Check the current icon and toggle it
   const toggleButton = document.getElementById("toggleButton");
   const menuIcon = document.getElementById("menuIcon");
-
   toggleButton.addEventListener("click", function () {
-    // Check the current icon and toggle it
     if (menuIcon.getAttribute("icon") === "mdi:menu") {
-      menuIcon.setAttribute("icon", "mdi:close"); // Change to a different icon
+      menuIcon.setAttribute("icon", "mdi:close");
     } else {
-      menuIcon.setAttribute("icon", "mdi:menu"); // Change back to the original icon
+      menuIcon.setAttribute("icon", "mdi:menu");
     }
   });
 }
 
-// Wait for screen to load and then hide loading and show main content
+/**
+ * Hides the loading screen and displays the main content once the window has finished loading.
+ */
 function loadingScreen() {
   window.addEventListener("load", function () {
-    document.getElementById("loading-screen").style.display = "none";
-    document.getElementById("content").style.display = "block";
+    const loadingScreenElement = document.getElementById("loading-screen");
+    const contentElement = document.getElementById("content");
+    loadingScreenElement.style.display = "none";
+    contentElement.style.display = "block";
   });
 }
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  loadingScreen();
+  navigationToggler();
+  scrollNavigator();
+});

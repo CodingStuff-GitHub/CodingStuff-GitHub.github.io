@@ -70,6 +70,18 @@ function navigationToggler() {
       }
     });
   });
+
+  const toggleButton = document.getElementById("toggleButton");
+  const menuIcon = document.getElementById("menuIcon");
+
+  toggleButton.addEventListener("click", function () {
+    // Check the current icon and toggle it
+    if (menuIcon.getAttribute("icon") === "mdi:menu") {
+      menuIcon.setAttribute("icon", "mdi:close"); // Change to a different icon
+    } else {
+      menuIcon.setAttribute("icon", "mdi:menu"); // Change back to the original icon
+    }
+  });
 }
 
 // Wait for screen to load and then hide loading and show main content

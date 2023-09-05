@@ -1,10 +1,17 @@
-// Activate Bootstrap scrollspy on the main nav element
+/**
+ * Activates scrollspy on the main navigation element and handles the scrolling behavior when a navigation link is clicked.
+ * It also updates the active navigation link based on the current scroll position.
+ */
 function scrollNavigator() {
-  const sections = document.querySelectorAll("section"); // Get all sections
+  const sections = document.querySelectorAll("section");
 
+  /**
+   * Handles the click event on a navigation link.
+   * Prevents the default link behavior, gets the target section based on the clicked link's href attribute, and scrolls to the target section smoothly.
+   */
   const handleNavClick = (event) => {
     event.preventDefault();
-    const target = document.querySelector(event.target.getAttribute("href")); // Get the target section
+    const target = document.querySelector(event.target.getAttribute("href"));
     const offset = target.offsetTop;
 
     window.scrollTo({
@@ -13,27 +20,30 @@ function scrollNavigator() {
     });
   };
 
+  /**
+   * Updates the active navigation link based on the current scroll position.
+   */
   const setActiveNav = () => {
     const scrollPosition = window.scrollY + window.innerHeight / 2;
-    let defaultActive = "about"; // Set default active section to "About"
+    let defaultActive = "about";
 
     sections.forEach((section) => {
       const navLink = document.querySelector(
         `.nav-link[href="#${section.id}"]`
       );
+      const { offsetTop, offsetHeight } = section;
 
       if (
-        section.offsetTop <= scrollPosition &&
-        section.offsetTop + section.offsetHeight > scrollPosition
+        offsetTop <= scrollPosition &&
+        offsetTop + offsetHeight > scrollPosition
       ) {
         navLink.classList.add("active");
-        defaultActive = section.id; // Update default active section
+        defaultActive = section.id;
       } else {
         navLink.classList.remove("active");
       }
     });
 
-    // Add "active" class to the default active section link
     const defaultNavLink = document.querySelector(
       `.nav-link[href="#${defaultActive}"]`
     );
@@ -47,7 +57,7 @@ function scrollNavigator() {
   });
 
   window.addEventListener("scroll", setActiveNav);
-  setActiveNav(); // Set active section based on scroll position
+  setActiveNav();
 }
 
 // Collapse responsive navbar when toggler is visible

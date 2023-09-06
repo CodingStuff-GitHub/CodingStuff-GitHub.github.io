@@ -281,12 +281,7 @@ button:focus:not(:focus-visible) {
   padding-bottom: 0.5rem;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  text-decoration: none;
-  white-space: nowrap;
+  display: none;
 }
 .navbar-nav {
   display: flex;
@@ -336,6 +331,14 @@ button:focus:not(:focus-visible) {
   background-size: 100%;
 }
 @media (min-width: 992px) {
+  .navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+  }
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -699,22 +702,6 @@ img::after {
   background: inherit;
   border-radius: inherit;
 }
-.thick-lines {
-  align-self: center;
-  padding: 0.5rem;
-  transition: all 0.5s ease;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
-  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-  border: solid 7px #41403e;
-  background-color: #f8f9fad3;
-  color: #171717;
-}
-.thick-lines:hover {
-  background-color: #f8f9fa;
-  color: #41403e;
-}
 #user-name {
   font-style: italic;
 }
@@ -755,4 +742,13 @@ img::after {
   color: white;
   font-weight: bold;
   font-size: larger;
+}
+.nav-bar-heading {
+  margin-right: auto;
+  color: white;
+}
+@media (min-width: 992px) {
+  .nav-bar-heading {
+    display: none;
+  }
 }

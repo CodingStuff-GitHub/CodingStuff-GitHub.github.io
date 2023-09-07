@@ -750,8 +750,8 @@ img::after {
   font-size: 1.5rem;
   margin-right: 1.5rem;
   background-size: cover;
-  cursor: pointer; /* Change the cursor to a pointer on hover */
-  transition: transform 0.2s ease-in-out; /* Add a smooth transition to the transform property */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;

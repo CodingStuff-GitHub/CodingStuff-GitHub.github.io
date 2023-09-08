@@ -102,8 +102,27 @@ function loadingScreen() {
   });
 }
 
+/**
+ * Adds a click event listener to all link elements with the class "playLink".
+ * When a link is clicked, it prevents the default navigation behavior and plays an audio element with the id "audioPlayer".
+ */
+function loadAudio() {
+  const playLinks = document.querySelectorAll(".playLink");
+  const audioPlayer = document.getElementById("audioPlayer");
+  function handleNavClick(event) {
+    event.preventDefault();
+    if (!event.target.classList.contains("active")) {
+      audioPlayer.play();
+    }
+  }
+  playLinks.forEach((link) => {
+    link.addEventListener("click", handleNavClick);
+  });
+}
+
 window.addEventListener("DOMContentLoaded", (event) => {
   loadingScreen();
   navigationToggler();
   scrollNavigator();
+  loadAudio();
 });

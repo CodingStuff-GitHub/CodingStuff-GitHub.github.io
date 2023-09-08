@@ -728,16 +728,16 @@ img::after {
   }
 }
 .social-icon-github {
-  background-image: url("/assets/img/icons/1.png");
+  background-image: url("/assets/img/icons/1.webp");
 }
 .social-icon-linkedin {
-  background-image: url("/assets/img/icons/2.png");
+  background-image: url("/assets/img/icons/2.webp");
 }
 .social-icon-hackerrank {
-  background-image: url("/assets/img/icons/3.png");
+  background-image: url("/assets/img/icons/3.webp");
 }
 .social-icon-leetcode {
-  background-image: url("/assets/img/icons/4.png");
+  background-image: url("/assets/img/icons/4.webp");
 }
 .social-icons .social-icon {
   display: inline-flex;

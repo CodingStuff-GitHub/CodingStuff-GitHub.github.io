@@ -70,7 +70,7 @@ h3 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: Neucha, sans-serif;
+  font-family: Architects Daughter, cursive, sans-serif;
   font-size: 1.3rem;
 }
 ul {
@@ -148,8 +148,8 @@ button:focus:not(:focus-visible) {
 .container,
 .container-fluid {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
   background-image: url(https://codingstuff-github.github.io/assets/img/paper_white4.webp);
@@ -182,6 +182,9 @@ button:focus:not(:focus-visible) {
 }
 .collapse:not(.show) {
   display: none;
+}
+.text-primary {
+  color: #bd5d38;
 }
 .nav-link {
   display: block;
@@ -360,13 +363,8 @@ button:focus:not(:focus-visible) {
 .p-0 {
   padding: 0 !important;
 }
-.text-primary {
-  --bs-text-opacity: 1;
-  color: rgba(var(#bd5d38), var(--bs-text-opacity)) !important;
-}
 .bg-primary {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(#bd5d38), var(--bs-bg-opacity)) !important;
+  background-color: #bd5d38, 1 !important;
 }
 @media (min-width: 768px) {
   .flex-md-row {
@@ -511,7 +509,7 @@ li {
   background: linear-gradient(-45deg, #000 0, #76767f 100%);
   transform: translate3d(1px, 0, 0) scale(0.97);
   filter: blur(21px);
-  opacity: var(0.7);
+  opacity: 0.7;
   transition: opacity 0.3s;
   border-radius: inherit;
 }
@@ -587,7 +585,7 @@ img:before {
   background: linear-gradient(0deg, #000 0, #4e4e55 100%);
   transform: translate3d(24px, 6px, 0) scale(0.7);
   filter: blur(19px);
-  opacity: var(0.47);
+  opacity: 0.47;
   transition: opacity 0.3s;
   border-radius: inherit;
 }

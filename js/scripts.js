@@ -80,13 +80,19 @@ function navigationToggler() {
 
   const toggleButton = document.getElementById("toggleButton");
   const menuIcon = document.getElementById("menuIcon");
-
   toggleButton.addEventListener("click", function () {
     const currentIcon = menuIcon.getAttribute("icon");
     menuIcon.setAttribute(
       "icon",
       currentIcon === "mdi:menu" ? "mdi:close" : "mdi:menu"
     );
+    const navbarResponsive = document.getElementById("navbarResponsive");
+    menuIcon.getAttribute("icon");
+    if (menuIcon.getAttribute("icon") === "mdi:menu") {
+      navbarResponsive.style.display = "none";
+    } else {
+      navbarResponsive.style.display = "block";
+    }
   });
 }
 
